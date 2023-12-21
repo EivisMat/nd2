@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forum</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    </head>
+    <body>
+        <header style="padding:0;width:100vw;height:100vh">
+            <section class="card" id="register-card">
+                <a id="home" href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <form action="/index.html" onsubmit="return handleLogin();">
+                    <div>
+                        <label id="username"l>Username</label><br>
+                            <input type="text" id="username-input" required placeholder="Username">
+                    </div>
+                    <div>
+                        <label id="password">Password</label><br>
+                        <input type="password" id="password-input" required><br>
+                        <i class="fa-solid fa-eye" id="eye"></i>
+                    </div>
+                    <script src="visibility.js"></script>
+                    <button id="submit-button" type="submit">Log in</button>
+                    <p>
+                        <h5>Don't have an account yet? <a href="/register.html">Create one!</a></h3>
+                        </p>
+                    </form>
+                    <script src="login.js"></script>
+            </section>
+        </header>
+        
+    </body>
+</html>

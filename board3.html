@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <canvas id="background"></canvas>
+        <h1>Forum Title</h1>
+    </header>
+    <script src="background-animation.js"></script>
+
+    <nav id="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/register.html">Register</a>
+        <a href="/login.html">Log in</a>
+        <script src="navbar.js"></script>
+    </nav>
+
+    <main id="main">
+        <a href="/post.html?id=31">
+            <div class="post">
+                <div class="post-title">
+                    This is a demo post in the Movies board!
+                </div>
+                <div class="poster-and-date">
+                    <div class="poster">
+                        Posted by: demo2
+                    </div>
+                    <div class="post-date">
+                        2023-12-15 13:00:00
+                    </div>
+                </div>
+                <div class="post-preview">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae aliquam, rem obcaecati aperiam...
+                </div>
+            </div>
+        </a>
+        <script src="main.js"></script>
+    </main>
+
+    <div class="for-footer"></div> <!-- little scuffed but need to add a little padding so the footer doesn't cover the last element -->
+
+    <footer>
+        &copy; 2023 Eivinas Matačinskas
+    </footer>
+
+</body>
+
+</html>

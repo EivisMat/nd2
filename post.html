@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <canvas id="background"></canvas>
+        <h1>Forum Title</h1>
+    </header>
+    <script src="background-animation.js"></script>
+
+    <nav id="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/register.html">Register</a>
+        <a href="/login.html">Log in</a>
+        <script src="navbar.js"></script>
+    </nav>
+
+    <main id="main">
+        <div class="main-post">
+            <div class="card">
+                <div class="post-name" id="post-name"></div>
+                <div class="post-info">
+                    <div class="poster-name" id="poster-name"></div>
+                    <div class="post-date" id="post-date"></div>
+                </div>
+                <div class="post-body" id="post-body"></div>
+            </div>
+        </div>
+        <div class="comments" id="comments"></div>
+
+        <div class="make-comment" id="make-comment">
+            <div class="card">
+                <form onsubmit="return false;">
+                    <textarea required></textarea> 
+                    <br>
+                    <button type="reset" id="submit-button"  style="width:80px;font-size:15px;margin:10px 0 0 0">Post</button>   
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="post.js"></script>
+
+    <div class="for-footer"></div> <!-- little scuffed but need to add a little padding so the footer doesn't cover the last element -->
+
+    <footer>
+        &copy; 2023 Eivinas Matačinskas
+    </footer>
+
+</body>
+
+</html>

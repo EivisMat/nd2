@@ -212,7 +212,9 @@ main a {
 }
 
 .main-post .card {
-    height: 30vh;
+    height: fit-content;
+    padding-bottom: 7.5vh;
+    padding-top: 7.5vh;
 }
 
 .post-info {

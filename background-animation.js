@@ -85,5 +85,46 @@ animate();
 
 window.addEventListener('resize', () => {
     canvas.width = header.offsetWidth;
-    canvas.height = header.offsetHeight;
+    canvas.height = header.offsetHeight; 
+});
+
+function spawnDot(x, y){
+    const newDot = new Dot();
+    newDot.x = x;
+    newDot.y = y;
+    dots.push(newDot);
+}
+
+let isInputDown = false;
+
+canvas.addEventListener('mousedown', (event) => {
+    isInputDown = true;
+    spawnDot(event.clientX, event.clientY);
+});
+
+canvas.addEventListener('mouseup', () => {
+    isInputDown = false;
+});
+
+canvas.addEventListener('mousemove', (event) => {
+    if (isInputDown) {
+        spawnDot(event.clientX, event.clientY);
+    }
+});
+
+canvas.addEventListener('touchstart', (event) => {
+    isInputDown = true;
+    const touch = event.touches[0];
+    spawnDot(touch.clientX, touch.clientY);
+});
+
+canvas.addEventListener('touchend', () => {
+    isInputDown = false;
+});
+
+canvas.addEventListener('touchmove', (event) => {
+    const touch = event.touches[0];
+    if (isInputDown) {
+        spawnDot(touch.clientX, touch.clientY);
+    }
 });

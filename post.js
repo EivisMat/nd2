@@ -8,6 +8,9 @@ const postDate = document.getElementById("post-date");
 const postBody = document.getElementById("post-body");
 const comments = document.getElementById("comments");
 
+// this honestly feels like a crime, but again, no backend, so I
+// can't just pull the comments, post name and so on from a DB like
+// I would want to. maybe one day i'll come back to this and do it proper
 switch(id){
     case 11: {
         postName.innerText = "This is a demo post in the General board!"
